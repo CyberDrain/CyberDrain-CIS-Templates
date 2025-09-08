@@ -1,15 +1,16 @@
-# CyberDrain CIS Baseline repository
+CyberDrain CIS Baseline Repository
 
-This repostiroy has been created by CyberDrain in collaberation with @IntuneAdmin. For more OSS baselines check out Jan's work at https://github.com/IntuneAdmin/IntuneBaselines and wolkenman.nl. 
+This repository has been created by CyberDrain in collaboration with @IntuneAdmin
+.
+For additional OSS baselines, check out Jan’s work at Intune Baselines
+ and wolkenman.nl
+.
 
-This repository contains **CIS Benchmark-aligned configuration policies** for **Microsoft Intune (Endpoint Manager)**, focused on securing **Windows 10/11** environments.
-All policies are provided in **JSON format** for easy import using CyberDrain's CIPP Platform, or for usage with IntuneManagement.
+This repository provides CIS Benchmark–aligned configuration policies for Microsoft Intune (Endpoint Manager), focusing on securing Windows 10/11 environments.
 
----
+All policies are supplied in JSON format, making them ready for direct import into the CyberDrain CIPP Platform or for usage with Intune Management.
 
-## 📂 Repository Structure
-
-```
+📂 Repository Structure
 CIS Microsoft Intune for Windows/
 ├── CIS Microsoft Intune for Windows Level 1/
 │   ├── CISv4 - WIN - L1 - ASR Block Adobe Reader from creating child processes.json
@@ -18,25 +19,37 @@ CIS Microsoft Intune for Windows/
 │   ├── CISv4 - WIN - L1 - User Account Control Run all administrators in Admin Approval Mode.json
 │   └── ... (many more Level 1 baseline policies)
 │
-└── CIS Microsoft Intune for Windows Level Bitlocker/
+└── CIS Microsoft Intune for Windows Level BitLocker/
     ├── CISv4 - WIN - BL - Require Device Encryption.json
     ├── CISv4 - WIN - BL - Deny write access to removable drives not protected by BitLocker.json
     ├── CISv4 - WIN - BL - Require additional authentication at startup.json
     └── ... (BitLocker encryption & recovery policies)
-```
 
+⚠️ Notes & Recommendations
 
-## ⚠️ Notes & Recommendations
+These policies are aligned with CIS Microsoft Windows 10/11 Benchmark v4.x.
 
-* These policies are aligned with **CIS Microsoft Windows 10/11 Benchmark v4.x**.
-* Always test policies in a **pilot group** before rolling them out to production.
-* Some settings (e.g., BitLocker recovery options, ASR rules) may require hardware/firmware support.
-* Adjust configurations if needed for compatibility with your environment.
+Always test policies in a pilot group before production rollout.
 
----
+Some settings (e.g., BitLocker recovery options, ASR rules) may depend on hardware/firmware compatibility.
 
-## 📖 References
+Adjust policies where needed to match your specific organizational environment.
 
-* [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks)
-* [Microsoft Intune Documentation](https://learn.microsoft.com/mem/intune/)
-* [BitLocker Overview](https://learn.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
+📖 References
+
+CIS Benchmarks
+
+Microsoft Intune Documentation
+
+BitLocker Overview
+
+💡 Reasoning & Contribution
+
+This repository is an open-source library created for use by everyone.
+It was built in collaboration with an expert in CIS Intune templates and will be continuously maintained by CyberDrain to stay up to date with CIS Benchmark changes.
+
+Completely open source (MIT license).
+
+Community contributions are welcome — we accept pull requests.
+
+Designed to help MSPs and sysadmins deploy hardened, standardized baselines quickly and reliably.
